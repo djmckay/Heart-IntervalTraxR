@@ -1,16 +1,134 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CJP-aK-7bM">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Symbol.ttf">
+            <string>Symbol</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Heart_IntervalTraxR_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView width="10" height="10" alignment="left" image="heart" animationDuration="0.5" id="0mH-uN-yjg"/>
+                        <timer alignment="center" id="RHM-tF-0UT">
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                        <group width="1" alignment="center" verticalAlignment="center" id="K6I-MJ-FUl">
+                            <items>
+                                <label alignment="center" text="---" minimumScaleFactor="0.20000000000000001" id="L1s-zG-AWJ">
+                                    <fontDescription key="font" name="Symbol" family="Symbol" pointSize="28"/>
+                                </label>
+                                <label alignment="right" text="BPM" id="nCL-CY-lOj">
+                                    <color key="textColor" red="0.86132884030000001" green="0.058584794400000001" blue="0.11313973369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Start" id="F7x-Xi-cIg">
+                            <connections>
+                                <action selector="startBtnTapped" destination="AgC-eL-Hgc" id="fhB-8h-PCI"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="heart" destination="0mH-uN-yjg" id="jRg-hj-9BS"/>
+                        <outlet property="heartRateLabel" destination="L1s-zG-AWJ" id="bpX-8b-c92"/>
+                        <outlet property="startStopButton" destination="F7x-Xi-cIg" id="27h-JF-q04"/>
+                        <outlet property="watchTimer" destination="RHM-tF-0UT" id="Xee-SX-JS0"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="1609" y="311"/>
+        </scene>
+        <!--Configure Duration Controller-->
+        <scene sceneID="hT9-bf-igt">
+            <objects>
+                <controller id="7Xi-uF-gca" customClass="ConfigureDurationController" customModule="Heart_IntervalTraxR_WatchKit_Extension">
+                    <items>
+                        <timer alignment="center" id="qVB-Qw-c3r">
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                        <slider width="1" alignment="left" continuous="YES" value="30" minimum="5" maximum="3600" steps="720" id="WfU-88-hMS">
+                            <connections>
+                                <action selector="zoneSliderDidChange:" destination="7Xi-uF-gca" id="8Pq-5y-sRu"/>
+                            </connections>
+                        </slider>
+                        <label width="136" height="47" alignment="left" text="Set interval time in target zone." numberOfLines="2" id="Gju-Ro-Duz"/>
+                        <button width="1" alignment="left" title="Next" id="8gB-W2-4HO">
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="HkD-wX-FOF"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="timeSlider" destination="WfU-88-hMS" id="2fj-CM-Slv"/>
+                        <outlet property="watchTimer" destination="qVB-Qw-c3r" id="5FX-gQ-yJo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1289" y="311"/>
+        </scene>
+        <!--Configure Session Controller-->
+        <scene sceneID="q8q-e5-3Jj">
+            <objects>
+                <controller id="2P5-rL-aKu" customClass="ConfigureSessionController" customModule="Heart_IntervalTraxR_WatchKit_Extension">
+                    <items>
+                        <slider width="1" alignment="center" verticalAlignment="center" maximum="3" steps="3" id="GQd-LE-gXc">
+                            <connections>
+                                <action selector="zoneSliderDidChange:" destination="2P5-rL-aKu" id="NWK-2y-kwp"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Next" id="WeH-rx-NMB">
+                            <connections>
+                                <segue destination="7Xi-uF-gca" kind="push" id="9Pw-2D-bye"/>
+                            </connections>
+                        </button>
+                        <group width="1" alignment="left" id="bE4-hO-EJa">
+                            <items>
+                                <label width="136" alignment="right" text="name" id="BRr-ig-Bar"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="KeO-jr-aG4">
+                            <items>
+                                <label width="47" height="50" alignment="left" text="---" textAlignment="center" id="4ds-yM-2vl"/>
+                                <label width="47" height="50" alignment="right" text="---" textAlignment="center" id="xIj-pK-XGN"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="maxHRZoneLabel" destination="xIj-pK-XGN" id="TqL-D3-tUc"/>
+                        <outlet property="minHRZoneLabel" destination="4ds-yM-2vl" id="Sxu-fr-dYs"/>
+                        <outlet property="targetZoneLabel" destination="BRr-ig-Bar" id="ail-aM-Erc"/>
+                        <outlet property="zoneSlider" destination="GQd-LE-gXc" id="jT3-pM-7by"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1000" y="311.5"/>
+        </scene>
+        <!--New Session Controller-->
+        <scene sceneID="nbt-nd-562">
+            <objects>
+                <controller id="CJP-aK-7bM" customClass="NewSessionController" customModule="Heart_IntervalTraxR_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Session" id="ovs-0n-8u1">
+                            <connections>
+                                <segue destination="2P5-rL-aKu" kind="push" id="aYL-LZ-fY6"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="728" y="313"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +149,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Heart_IntervalTraxR_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

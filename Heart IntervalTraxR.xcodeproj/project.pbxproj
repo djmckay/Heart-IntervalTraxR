@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2221046A1FD6DFD8009A3362 /* NewSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222104691FD6DFD8009A3362 /* NewSessionController.swift */; };
+		2221046C1FD6E1F6009A3362 /* ProfileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221046B1FD6E1F6009A3362 /* ProfileDataStore.swift */; };
+		2221046E1FD6E387009A3362 /* ConfigureSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221046D1FD6E387009A3362 /* ConfigureSessionController.swift */; };
+		222104701FD6E41E009A3362 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221046F1FD6E41E009A3362 /* UserHealthProfile.swift */; };
+		222104711FD6F1BD009A3362 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221046F1FD6E41E009A3362 /* UserHealthProfile.swift */; };
+		22519D791FD4D4E700D837E8 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22519D781FD4D4E700D837E8 /* UserDefaultsManager.swift */; };
+		22519D7A1FD4D52E00D837E8 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22519D781FD4D4E700D837E8 /* UserDefaultsManager.swift */; };
+		22519D7C1FD5988500D837E8 /* ParentConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22519D7B1FD5988500D837E8 /* ParentConnector.swift */; };
+		22519D7E1FD599F400D837E8 /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22519D7D1FD599F400D837E8 /* WatchManager.swift */; };
 		22A39E151FD4A9AB00005743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A39E141FD4A9AB00005743 /* AppDelegate.swift */; };
 		22A39E171FD4A9AB00005743 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A39E161FD4A9AB00005743 /* ViewController.swift */; };
 		22A39E1A1FD4A9AB00005743 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A39E181FD4A9AB00005743 /* Main.storyboard */; };
@@ -20,6 +29,15 @@
 		22A39E3A1FD4A9AB00005743 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A39E391FD4A9AB00005743 /* ExtensionDelegate.swift */; };
 		22A39E3C1FD4A9AB00005743 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A39E3B1FD4A9AB00005743 /* NotificationController.swift */; };
 		22A39E3E1FD4A9AB00005743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A39E3D1FD4A9AB00005743 /* Assets.xcassets */; };
+		22A39E511FD4A9C200005743 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A39E501FD4A9C200005743 /* HealthKit.framework */; };
+		22A39E551FD4AA0E00005743 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A39E521FD4AA0D00005743 /* HealthKitManager.swift */; };
+		22A39E561FD4AA0E00005743 /* InterfaceControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A39E531FD4AA0D00005743 /* InterfaceControllerProtocol.swift */; };
+		22A39E571FD4AA0E00005743 /* HeartIntervalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A39E541FD4AA0E00005743 /* HeartIntervalController.swift */; };
+		22A39E5A1FD4ABEF00005743 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A39E591FD4ABEF00005743 /* HealthKit.framework */; };
+		22AF42381FD884C400547A74 /* ConfigureDurationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AF42371FD884C400547A74 /* ConfigureDurationController.swift */; };
+		22F257431FD4B14C00E1AD7F /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A39E521FD4AA0D00005743 /* HealthKitManager.swift */; };
+		22F257441FD4C5FF00E1AD7F /* HeartIntervalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A39E541FD4AA0E00005743 /* HeartIntervalController.swift */; };
+		22F257451FD4C60200E1AD7F /* InterfaceControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A39E531FD4AA0D00005743 /* InterfaceControllerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +83,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		222104691FD6DFD8009A3362 /* NewSessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionController.swift; sourceTree = "<group>"; };
+		2221046B1FD6E1F6009A3362 /* ProfileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataStore.swift; sourceTree = "<group>"; };
+		2221046D1FD6E387009A3362 /* ConfigureSessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureSessionController.swift; sourceTree = "<group>"; };
+		2221046F1FD6E41E009A3362 /* UserHealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
+		22519D781FD4D4E700D837E8 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		22519D7B1FD5988500D837E8 /* ParentConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentConnector.swift; sourceTree = "<group>"; };
+		22519D7D1FD599F400D837E8 /* WatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
 		22A39E111FD4A9AB00005743 /* Heart IntervalTraxR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heart IntervalTraxR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A39E141FD4A9AB00005743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22A39E161FD4A9AB00005743 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +108,14 @@
 		22A39E3D1FD4A9AB00005743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22A39E3F1FD4A9AB00005743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22A39E401FD4A9AB00005743 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		22A39E4E1FD4A9C200005743 /* Heart IntervalTraxR WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Heart IntervalTraxR WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		22A39E501FD4A9C200005743 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		22A39E521FD4AA0D00005743 /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		22A39E531FD4AA0D00005743 /* InterfaceControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceControllerProtocol.swift; sourceTree = "<group>"; };
+		22A39E541FD4AA0E00005743 /* HeartIntervalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartIntervalController.swift; sourceTree = "<group>"; };
+		22A39E581FD4ABEF00005743 /* Heart IntervalTraxR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Heart IntervalTraxR.entitlements"; sourceTree = "<group>"; };
+		22A39E591FD4ABEF00005743 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		22AF42371FD884C400547A74 /* ConfigureDurationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureDurationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A39E5A1FD4ABEF00005743 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A39E511FD4A9C200005743 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +145,7 @@
 				22A39E271FD4A9AB00005743 /* Heart IntervalTraxR WatchKit App */,
 				22A39E361FD4A9AB00005743 /* Heart IntervalTraxR WatchKit Extension */,
 				22A39E121FD4A9AB00005743 /* Products */,
+				22A39E4F1FD4A9C200005743 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,8 +162,11 @@
 		22A39E131FD4A9AB00005743 /* Heart IntervalTraxR */ = {
 			isa = PBXGroup;
 			children = (
+				22A39E581FD4ABEF00005743 /* Heart IntervalTraxR.entitlements */,
 				22A39E141FD4A9AB00005743 /* AppDelegate.swift */,
+				22519D781FD4D4E700D837E8 /* UserDefaultsManager.swift */,
 				22A39E161FD4A9AB00005743 /* ViewController.swift */,
+				22519D7D1FD599F400D837E8 /* WatchManager.swift */,
 				22A39E181FD4A9AB00005743 /* Main.storyboard */,
 				22A39E1B1FD4A9AB00005743 /* Assets.xcassets */,
 				22A39E1D1FD4A9AB00005743 /* LaunchScreen.storyboard */,
@@ -149,14 +188,33 @@
 		22A39E361FD4A9AB00005743 /* Heart IntervalTraxR WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				22A39E521FD4AA0D00005743 /* HealthKitManager.swift */,
+				2221046F1FD6E41E009A3362 /* UserHealthProfile.swift */,
+				2221046B1FD6E1F6009A3362 /* ProfileDataStore.swift */,
+				22A39E541FD4AA0E00005743 /* HeartIntervalController.swift */,
+				22A39E531FD4AA0D00005743 /* InterfaceControllerProtocol.swift */,
+				22A39E4E1FD4A9C200005743 /* Heart IntervalTraxR WatchKit Extension.entitlements */,
 				22A39E371FD4A9AB00005743 /* InterfaceController.swift */,
+				222104691FD6DFD8009A3362 /* NewSessionController.swift */,
+				2221046D1FD6E387009A3362 /* ConfigureSessionController.swift */,
+				22AF42371FD884C400547A74 /* ConfigureDurationController.swift */,
 				22A39E391FD4A9AB00005743 /* ExtensionDelegate.swift */,
 				22A39E3B1FD4A9AB00005743 /* NotificationController.swift */,
 				22A39E3D1FD4A9AB00005743 /* Assets.xcassets */,
 				22A39E3F1FD4A9AB00005743 /* Info.plist */,
 				22A39E401FD4A9AB00005743 /* PushNotificationPayload.apns */,
+				22519D7B1FD5988500D837E8 /* ParentConnector.swift */,
 			);
 			path = "Heart IntervalTraxR WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		22A39E4F1FD4A9C200005743 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22A39E591FD4ABEF00005743 /* HealthKit.framework */,
+				22A39E501FD4A9C200005743 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +286,14 @@
 					22A39E101FD4A9AB00005743 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					22A39E221FD4A9AB00005743 = {
 						CreatedOnToolsVersion = 9.1;
@@ -236,6 +302,14 @@
 					22A39E311FD4A9AB00005743 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -294,8 +368,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222104711FD6F1BD009A3362 /* UserHealthProfile.swift in Sources */,
+				22F257451FD4C60200E1AD7F /* InterfaceControllerProtocol.swift in Sources */,
 				22A39E171FD4A9AB00005743 /* ViewController.swift in Sources */,
+				22519D791FD4D4E700D837E8 /* UserDefaultsManager.swift in Sources */,
+				22F257441FD4C5FF00E1AD7F /* HeartIntervalController.swift in Sources */,
+				22519D7E1FD599F400D837E8 /* WatchManager.swift in Sources */,
 				22A39E151FD4A9AB00005743 /* AppDelegate.swift in Sources */,
+				22F257431FD4B14C00E1AD7F /* HealthKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,8 +383,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A39E561FD4AA0E00005743 /* InterfaceControllerProtocol.swift in Sources */,
+				2221046C1FD6E1F6009A3362 /* ProfileDataStore.swift in Sources */,
+				2221046A1FD6DFD8009A3362 /* NewSessionController.swift in Sources */,
+				22A39E571FD4AA0E00005743 /* HeartIntervalController.swift in Sources */,
+				22AF42381FD884C400547A74 /* ConfigureDurationController.swift in Sources */,
 				22A39E3C1FD4A9AB00005743 /* NotificationController.swift in Sources */,
+				22519D7A1FD4D52E00D837E8 /* UserDefaultsManager.swift in Sources */,
 				22A39E3A1FD4A9AB00005743 /* ExtensionDelegate.swift in Sources */,
+				22519D7C1FD5988500D837E8 /* ParentConnector.swift in Sources */,
+				222104701FD6E41E009A3362 /* UserHealthProfile.swift in Sources */,
+				2221046E1FD6E387009A3362 /* ConfigureSessionController.swift in Sources */,
+				22A39E551FD4AA0E00005743 /* HealthKitManager.swift in Sources */,
 				22A39E381FD4A9AB00005743 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Heart IntervalTraxR WatchKit Extension/Heart IntervalTraxR WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q5Q8VAQZ5;
 				INFOPLIST_FILE = "Heart IntervalTraxR WatchKit Extension/Info.plist";
@@ -481,6 +572,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Heart IntervalTraxR WatchKit Extension/Heart IntervalTraxR WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q5Q8VAQZ5;
 				INFOPLIST_FILE = "Heart IntervalTraxR WatchKit Extension/Info.plist";
@@ -537,6 +629,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Heart IntervalTraxR/Heart IntervalTraxR.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q5Q8VAQZ5;
 				INFOPLIST_FILE = "Heart IntervalTraxR/Info.plist";
@@ -552,6 +645,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Heart IntervalTraxR/Heart IntervalTraxR.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q5Q8VAQZ5;
 				INFOPLIST_FILE = "Heart IntervalTraxR/Info.plist";

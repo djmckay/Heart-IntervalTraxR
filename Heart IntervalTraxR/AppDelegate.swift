@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        HealthKitManager.sharedInstance.authorizeHealthKit { (success, error) in
+            print(error)
+            
+            let wm = WatchManager.sharedInstance
+            wm.send(key: "Authorization", value: success)
+        }
+        
         return true
     }
 
